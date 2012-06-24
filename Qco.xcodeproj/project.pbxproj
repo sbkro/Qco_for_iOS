@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72ABA4D21591F7E100319B0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ABA4D11591F7E100319B0F /* Foundation.framework */; };
+		72ABA4E11591F86800319B0F /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72ABA4DE1591F86800319B0F /* QR_Encode.cpp */; };
+		72ABA4E21591F86800319B0F /* QR_Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ABA4DF1591F86800319B0F /* QR_Encode.h */; };
+		72ABA4E31591F86800319B0F /* win2ansi.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ABA4E01591F86800319B0F /* win2ansi.h */; };
+		72ABA4E61591F9CB00319B0F /* QCQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ABA4E41591F9CB00319B0F /* QCQRCode.h */; };
+		72ABA4E71591F9CB00319B0F /* QCQRCode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72ABA4E51591F9CB00319B0F /* QCQRCode.mm */; };
+		72E5EAC61595F8B800554C1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720D6CFA1595CE7200E8A581 /* UIKit.framework */; };
+		72E5EAC71595F8B800554C1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ABA4D11591F7E100319B0F /* Foundation.framework */; };
+		72E5EACD1595F8B800554C1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72E5EACB1595F8B800554C1A /* InfoPlist.strings */; };
+		72E5EAD01595F8B800554C1A /* TestQco.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E5EACF1595F8B800554C1A /* TestQco.m */; };
+		72E5EAD61595F8F000554C1A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EAD51595F8F000554C1A /* SenTestingKit.framework */; };
+		72E5EADB1595FBEC00554C1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720D6CFA1595CE7200E8A581 /* UIKit.framework */; };
+		72E5EAE11595FE7600554C1A /* QCQRCode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72ABA4E51591F9CB00319B0F /* QCQRCode.mm */; };
+		72E5EAE21595FE8D00554C1A /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72ABA4DE1591F86800319B0F /* QR_Encode.cpp */; };
+		72E5EAE51595FF2400554C1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EAE31595FF1800554C1A /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		720D6CFA1595CE7200E8A581 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72ABA4CE1591F7E100319B0F /* libQco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQco.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72ABA4D11591F7E100319B0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72ABA4D51591F7E100319B0F /* Qco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Qco-Prefix.pch"; sourceTree = "<group>"; };
+		72ABA4DE1591F86800319B0F /* QR_Encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QR_Encode.cpp; sourceTree = "<group>"; };
+		72ABA4DF1591F86800319B0F /* QR_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QR_Encode.h; sourceTree = "<group>"; };
+		72ABA4E01591F86800319B0F /* win2ansi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win2ansi.h; sourceTree = "<group>"; };
+		72ABA4E41591F9CB00319B0F /* QCQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCQRCode.h; sourceTree = "<group>"; };
+		72ABA4E51591F9CB00319B0F /* QCQRCode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QCQRCode.mm; sourceTree = "<group>"; };
+		72E5EAC31595F8B800554C1A /* TestQco.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestQco.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72E5EACA1595F8B800554C1A /* TestQco-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestQco-Info.plist"; sourceTree = "<group>"; };
+		72E5EACC1595F8B800554C1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72E5EACE1595F8B800554C1A /* TestQco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestQco.h; sourceTree = "<group>"; };
+		72E5EACF1595F8B800554C1A /* TestQco.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestQco.m; sourceTree = "<group>"; };
+		72E5EAD11595F8B800554C1A /* TestQco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestQco-Prefix.pch"; sourceTree = "<group>"; };
+		72E5EAD51595F8F000554C1A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		72E5EAE31595FF1800554C1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72ABA4CB1591F7E100319B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E5EADB1595FBEC00554C1A /* UIKit.framework in Frameworks */,
+				72ABA4D21591F7E100319B0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72E5EABF1595F8B800554C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E5EAE51595FF2400554C1A /* CoreGraphics.framework in Frameworks */,
+				72E5EAC61595F8B800554C1A /* UIKit.framework in Frameworks */,
+				72E5EAC71595F8B800554C1A /* Foundation.framework in Frameworks */,
+				72E5EAD61595F8F000554C1A /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72ABA4C31591F7E100319B0F = {
+			isa = PBXGroup;
+			children = (
+				72ABA4D31591F7E100319B0F /* Qco */,
+				72E5EAC81595F8B800554C1A /* TestQco */,
+				72ABA4D01591F7E100319B0F /* Frameworks */,
+				72ABA4CF1591F7E100319B0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72ABA4CF1591F7E100319B0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72ABA4CE1591F7E100319B0F /* libQco.a */,
+				72E5EAC31595F8B800554C1A /* TestQco.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72ABA4D01591F7E100319B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72E5EAE31595FF1800554C1A /* CoreGraphics.framework */,
+				72E5EAD51595F8F000554C1A /* SenTestingKit.framework */,
+				720D6CFA1595CE7200E8A581 /* UIKit.framework */,
+				72ABA4D11591F7E100319B0F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72ABA4D31591F7E100319B0F /* Qco */ = {
+			isa = PBXGroup;
+			children = (
+				72ABA4E41591F9CB00319B0F /* QCQRCode.h */,
+				72ABA4E51591F9CB00319B0F /* QCQRCode.mm */,
+				72ABA4DF1591F86800319B0F /* QR_Encode.h */,
+				72ABA4DE1591F86800319B0F /* QR_Encode.cpp */,
+				72ABA4D41591F7E100319B0F /* Supporting Files */,
+				72ABA4E01591F86800319B0F /* win2ansi.h */,
+			);
+			path = Qco;
+			sourceTree = "<group>";
+		};
+		72ABA4D41591F7E100319B0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72ABA4D51591F7E100319B0F /* Qco-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72E5EAC81595F8B800554C1A /* TestQco */ = {
+			isa = PBXGroup;
+			children = (
+				72E5EACE1595F8B800554C1A /* TestQco.h */,
+				72E5EACF1595F8B800554C1A /* TestQco.m */,
+				72E5EAC91595F8B800554C1A /* Supporting Files */,
+			);
+			path = TestQco;
+			sourceTree = "<group>";
+		};
+		72E5EAC91595F8B800554C1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72E5EACA1595F8B800554C1A /* TestQco-Info.plist */,
+				72E5EACB1595F8B800554C1A /* InfoPlist.strings */,
+				72E5EAD11595F8B800554C1A /* TestQco-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		72ABA4CC1591F7E100319B0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABA4E21591F86800319B0F /* QR_Encode.h in Headers */,
+				72ABA4E31591F86800319B0F /* win2ansi.h in Headers */,
+				72ABA4E61591F9CB00319B0F /* QCQRCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		72ABA4CD1591F7E100319B0F /* Qco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72ABA4DB1591F7E100319B0F /* Build configuration list for PBXNativeTarget "Qco" */;
+			buildPhases = (
+				72ABA4CA1591F7E100319B0F /* Sources */,
+				72ABA4CB1591F7E100319B0F /* Frameworks */,
+				72ABA4CC1591F7E100319B0F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qco;
+			productName = Qco;
+			productReference = 72ABA4CE1591F7E100319B0F /* libQco.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		72E5EAC21595F8B800554C1A /* TestQco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72E5EAD21595F8B800554C1A /* Build configuration list for PBXNativeTarget "TestQco" */;
+			buildPhases = (
+				72E5EABE1595F8B800554C1A /* Sources */,
+				72E5EABF1595F8B800554C1A /* Frameworks */,
+				72E5EAC01595F8B800554C1A /* Resources */,
+				72E5EAC11595F8B800554C1A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestQco;
+			productName = TestQco;
+			productReference = 72E5EAC31595F8B800554C1A /* TestQco.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72ABA4C51591F7E100319B0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 72ABA4C81591F7E100319B0F /* Build configuration list for PBXProject "Qco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72ABA4C31591F7E100319B0F;
+			productRefGroup = 72ABA4CF1591F7E100319B0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72ABA4CD1591F7E100319B0F /* Qco */,
+				72E5EAC21595F8B800554C1A /* TestQco */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72E5EAC01595F8B800554C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E5EACD1595F8B800554C1A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E5EAC11595F8B800554C1A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72ABA4CA1591F7E100319B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABA4E11591F86800319B0F /* QR_Encode.cpp in Sources */,
+				72ABA4E71591F9CB00319B0F /* QCQRCode.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72E5EABE1595F8B800554C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E5EAE21595FE8D00554C1A /* QR_Encode.cpp in Sources */,
+				72E5EAE11595FE7600554C1A /* QCQRCode.mm in Sources */,
+				72E5EAD01595F8B800554C1A /* TestQco.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72E5EACB1595F8B800554C1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E5EACC1595F8B800554C1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72ABA4D91591F7E100319B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72ABA4DA1591F7E100319B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72ABA4DC1591F7E100319B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Qco.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Qco/Qco-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72ABA4DD1591F7E100319B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Qco.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Qco/Qco-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		72E5EAD31595F8B800554C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestQco/TestQco-Prefix.pch";
+				INFOPLIST_FILE = "TestQco/TestQco-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		72E5EAD41595F8B800554C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestQco/TestQco-Prefix.pch";
+				INFOPLIST_FILE = "TestQco/TestQco-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72ABA4C81591F7E100319B0F /* Build configuration list for PBXProject "Qco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABA4D91591F7E100319B0F /* Debug */,
+				72ABA4DA1591F7E100319B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72ABA4DB1591F7E100319B0F /* Build configuration list for PBXNativeTarget "Qco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ABA4DC1591F7E100319B0F /* Debug */,
+				72ABA4DD1591F7E100319B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72E5EAD21595F8B800554C1A /* Build configuration list for PBXNativeTarget "TestQco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72E5EAD31595F8B800554C1A /* Debug */,
+				72E5EAD41595F8B800554C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72ABA4C51591F7E100319B0F /* Project object */;
+}
