@@ -25,18 +25,18 @@ enum QCErrorCorrectLevel {
 
 
 //-------------------------------------------------------------------
-// This class is encoder class of QRCode. 
+// This class is encoder class of QRCode.
 // This class has been designed to make a QR code in three steps.
-// 
+//
 //   1. Initialize
-//      - Initialize using "init" method. Parameter sets the initial 
+//      - Initialize using "init" method. Parameter sets the initial
 //        value at this time.
 //   2. Set parameters
-//      - If you would like to change initial value, you can 
+//      - If you would like to change initial value, you can
 //        set parameters using property.
 //   3. Encode
 //      - You can get QR code image using "encodeWithText:".
-// 
+//
 // This class is wrapper class of C++ program.
 // And it is used part of open source code at "Psytec Inc.".
 // In detail, please refer to the following URL.
@@ -49,20 +49,20 @@ enum QCErrorCorrectLevel {
     // pixel size per a module.
     // If the value is bigger, QR code is increased.
     int moduleSize;
-    
+
     // Error Correction Level of QR Code.
     // If the value is bigger, QR Code size is increased.
     // Please use "QRErrorCorrectLevel".
     enum QCErrorCorrectLevel correctLevel;
-    
+
     // Version of QR Code. Its range is from 1 to 40.
     // If the value big, QR Code size is increased.
     int symbolVersion;
-    
-    // Background Color of QR Code
-    UIColor * fgColor;
-    
+
     // Foreground Color of QR Code
+    UIColor * fgColor;
+
+    // Background Color of QR Code
     UIColor * bgColor;
 }
 
@@ -74,7 +74,7 @@ enum QCErrorCorrectLevel {
 // Initialize Method
 // At this time, parameters of this class is initialized as follow.
 // If you would like to change initial value, use properties.
-// 
+//
 //  - moduleSize    :  1px
 //  - correctLevel  :  Low (QCErrorCorrectLevelLow)
 //  - symbolVersion :  Automatioc. Change by text.
