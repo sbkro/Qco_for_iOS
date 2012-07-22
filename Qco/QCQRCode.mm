@@ -87,22 +87,30 @@
     if (ret == FALSE) {
         return nil;
     }
-    
+	
     // Create ImageContext
     int pxLength = moduleSize * encoder->m_nSymbleSize;
-    UIGraphicsBeginImageContext(CGSizeMake(pxLength, pxLength));
+	CGSize size = CGSizeMake(pxLength, pxLength);
+	if (UIGraphicsBeginImageContextWithOptions != NULL) { // Retina (iPhone4, iPhone4S)
+		UIGraphicsBeginImageContextWithOptions(size, NO, 2.0);
+    } else {
+	    UIGraphicsBeginImageContext(size);
+	}
     
     // Draw background
     CGContextRef imgContext = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(imgContext, bgColor.CGColor);
     
     // Draw foreground
-    CGContextFillRect(imgContext, CGRectMake(0, 0, pxLength, pxLength));
+	CGRect fgRect = CGRectMake(0, 0, pxLength, pxLength);
+    CGContextFillRect(imgContext, fgRect);
     CGContextSetFillColorWithColor(imgContext, fgColor.CGColor);
-    for (int y = 0; y < pxLength; y++) {
-        for (int x = 0; x < pxLength; x++) {
+	
+    for (int y = 0; y < encoder->m_nSymbleSize; y++) {
+        for (int x = 0; x < encoder->m_nSymbleSize; x++) {
             if (encoder->m_byModuleData[x][y]) {
-                CGContextFillRect(imgContext, CGRectMake(x * moduleSize, y * moduleSize, moduleSize, moduleSize));
+				CGRect buf = CGRectMake(x * moduleSize, y * moduleSize, moduleSize, moduleSize);
+                CGContextFillRect(imgContext, buf);
             }
         }
     }
